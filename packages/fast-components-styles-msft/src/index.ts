@@ -1,6 +1,10 @@
 /**
  * Export button styles
  */
+import ActionTriggerStyles from "./action-trigger";
+export { ActionTriggerStyles };
+export * from "./action-trigger";
+
 import ButtonStyles from "./button";
 export { ButtonStyles };
 

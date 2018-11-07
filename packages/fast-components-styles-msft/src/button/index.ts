@@ -43,11 +43,11 @@ function applyTransaprentBackplateStyles(): CSSRules<DesignSystem> {
                 designSystem.backgroundColor
             );
         },
-        ...applyTransaprentBackground(),
+        ...applyTransparentBackground(),
         "&:hover, &:focus": {
             borderColor: "transparent",
             boxShadow: "none",
-            ...applyTransaprentBackground(),
+            ...applyTransparentBackground(),
         },
         "&:focus $button_contentRegion::before, &:active $button_contentRegion::before, &:hover $button_contentRegion::before": {
             background: (config: DesignSystem): string => {
@@ -60,7 +60,7 @@ function applyTransaprentBackplateStyles(): CSSRules<DesignSystem> {
             },
         },
         "&$button__disabled, &$button__disabled $button_contentRegion::before": {
-            ...applyTransaprentBackground(),
+            ...applyTransparentBackground(),
         },
         "&$button__disabled": {
             borderColor: "transparent",
@@ -77,7 +77,7 @@ function applyTransaprentBackplateStyles(): CSSRules<DesignSystem> {
     };
 }
 
-function applyTransaprentBackground(): CSSRules<DesignSystem> {
+function applyTransparentBackground(): CSSRules<DesignSystem> {
     return {
         backgroundColor: "transparent",
     };
@@ -243,15 +243,15 @@ const styles: ComponentStyles<ButtonClassNameContract, DesignSystem> = (
             "&, &:hover": {
                 color: outlineColor,
                 borderColor: outlineBorderColor,
-                ...applyTransaprentBackground(),
+                ...applyTransparentBackground(),
             },
             "&:focus": {
-                ...applyTransaprentBackground(),
+                ...applyTransparentBackground(),
                 borderColor: outlineBorderColor,
                 boxShadow: `inset 0 0 0 1px ${outlineBorderColor}`,
             },
             "&$button__disabled": {
-                ...applyTransaprentBackground(),
+                ...applyTransparentBackground(),
                 color: outlineDisabledColor,
                 borderColor: outlineDisabledBorderColor,
             },

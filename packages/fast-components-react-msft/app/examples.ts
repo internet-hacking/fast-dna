@@ -1,3 +1,6 @@
+import ActionTriggerExamples from "../src/action-trigger/examples.data";
+export { ActionTriggerExamples };
+
 import ButtonExamples from "../src/button/examples.data";
 export { ButtonExamples };
 
