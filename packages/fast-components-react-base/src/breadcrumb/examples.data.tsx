@@ -6,16 +6,16 @@ import { BreadcrumbItemProps } from "../breadcrumb-item";
 import { noop } from "lodash-es";
 import Documentation from "./.tmp/documentation";
 
-function breadcrumbItemPropFactory(): BreadcrumbItemProps {
-    return {
-        managedClasses: {
-            breadcrumbItem: "breadcrumb-item",
-            breadcrumbItem__current: "breadcrumb-item-current",
-            breadcrumbItem_hypertext: "breadcrumb-item-hypertext",
-        },
-        onClick: noop,
-    };
-}
+// function breadcrumbItemPropFactory(): BreadcrumbItemProps {
+//     return {
+//         managedClasses: {
+//             breadcrumbItem: "breadcrumb-item",
+//             breadcrumbItem__current: "breadcrumb-item-current",
+//             breadcrumbItem_hypertext: "breadcrumb-item-hypertext",
+//         },
+//         onClick: noop,
+//     };
+// }
 
 const managedClasses: BreadcrumbManagedClasses = {
     managedClasses: {
@@ -39,29 +39,43 @@ const examples: ComponentFactoryExample<BreadcrumbProps> = {
         },
         children: [
             {
-                id: "breadcrumb-item",
+                id: "hypertext",
                 props: {
-                    ...breadcrumbItemPropFactory(),
                     href: "https://www.microsoft.com/en-us/",
                     children: "breadcrumb item 1",
                 },
             },
             {
-                id: "breadcrumb-item",
+                id: "hypertext",
                 props: {
-                    ...breadcrumbItemPropFactory(),
                     href: "https://www.microsoft.com/en-us/",
                     children: "breadcrumb item 2",
                 },
             },
-            {
-                id: "breadcrumb-item",
-                props: {
-                    ...breadcrumbItemPropFactory(),
-                    href: "https://www.microsoft.com/en-us/",
-                    children: "breadcrumb item 3",
-                },
-            },
+            // {
+            //     id: "breadcrumb-item",
+            //     props: {
+            //         ...breadcrumbItemPropFactory(),
+            //         href: "https://www.microsoft.com/en-us/",
+            //         children: "breadcrumb item 1",
+            //     },
+            // },
+            // {
+            //     id: "breadcrumb-item",
+            //     props: {
+            //         ...breadcrumbItemPropFactory(),
+            //         href: "https://www.microsoft.com/en-us/",
+            //         children: "breadcrumb item 2",
+            //     },
+            // },
+            // {
+            //     id: "breadcrumb-item",
+            //     props: {
+            //         ...breadcrumbItemPropFactory(),
+            //         href: "https://www.microsoft.com/en-us/",
+            //         children: "breadcrumb item 3",
+            //     },
+            // },
         ],
     },
     data: [
@@ -73,76 +87,76 @@ const examples: ComponentFactoryExample<BreadcrumbProps> = {
                 return <div className={className}>\</div>;
             },
             children: [
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 1",
-                    },
-                },
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 2",
-                    },
-                },
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 2",
-                    },
-                },
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 3",
-                    },
-                },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 1",
+                //     },
+                // },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 2",
+                //     },
+                // },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 2",
+                //     },
+                // },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 3",
+                //     },
+                // },
             ],
         },
         {
             ...managedClasses,
             label: "breadcrumb",
             children: [
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 1",
-                    },
-                },
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 2",
-                    },
-                },
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 2",
-                    },
-                },
-                {
-                    id: "breadcrumb-item",
-                    props: {
-                        ...breadcrumbItemPropFactory(),
-                        href: "https://www.microsoft.com/en-us/",
-                        children: "breadcrumb item 3",
-                    },
-                },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 1",
+                //     },
+                // },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 2",
+                //     },
+                // },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 2",
+                //     },
+                // },
+                // {
+                //     id: "breadcrumb-item",
+                //     props: {
+                //         ...breadcrumbItemPropFactory(),
+                //         href: "https://www.microsoft.com/en-us/",
+                //         children: "breadcrumb item 3",
+                //     },
+                // },
             ],
         },
     ],

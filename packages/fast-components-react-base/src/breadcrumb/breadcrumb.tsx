@@ -67,21 +67,7 @@ class Breadcrumb extends Foundation<
         child: React.ReactElement<BreadcrumbItemProps>,
         index: number
     ): React.ReactFragment => {
-        const childCount: number = React.Children.count(this.props.children);
-        if (childCount - 1 === index) {
-            return React.cloneElement(child, {
-                current: true,
-                href: undefined,
-            });
-        }
-        return (
-            <React.Fragment>
-                {child}
-                {typeof this.props.seperator === "function"
-                    ? this.props.seperator(this.props.managedClasses.breadcrumb_seperator)
-                    : null}
-            </React.Fragment>
-        );
+        return <li key={index}>{child}</li>;
     };
 }
 
